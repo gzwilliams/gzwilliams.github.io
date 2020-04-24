@@ -48,14 +48,14 @@
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Where is the Client's Revenue Coming From?</h1>
+								<h1>Relative to Housing Prices in 1990, How Have Housing Prices Changed Through Time?</h1>
 							</header>
 							<div class="content">
-								<span style='font-weight: bold;'>Purpose:</span> <p>Display the avenues in which units are sold and where revenue<br />
-								is made - Monthly time series.</p>
+								<span style='font-weight: bold;'>Purpose:</span> <p>Display Housing Index Data for the USA by State in Order to<br />
+								See the Change Over Time.</p>
 								<ul class="actions">
-									<li><a href="https://github.com/gzwilliams/Business-Analysis-Units.Revenue.Channel.Fee/blob/master/ChannelFee-Breakdownport.r"
-										target="_blank" class="fa fa-code"> Source</a></li>
+									<li><a href="https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_PO_state.txt"
+										target="_blank" class="fa fa-code"> FHFA Data Source</a></li>
 								</ul>
 								<!--<p>Methods: Wrote a SQL script to pull data. Transform and clean dataframes with R. Produce Images with R.</p>-->
 							</div>
@@ -69,53 +69,55 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Displaying Monthly Units Sold and Revenue: Interactive Lineplots</h2>
+										<h2>Tableau Dashboard: USA Housing Index 1990-2019</h2>
 									</header>
-									<!--<p>We can see a distribution of how many hours ahead of the reservation that a booking is made, as well as through which channel.</p>-->
-									<iframe src="cftdunits_lineplot2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
-									<iframe src="cftdrevenue_lineplot2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									<p>From the dashboard we can see how the average housing price changes over time for each state and which states recovered from
+										the 2008 financial crisis.
+									</p>
+									<div class='tableauPlaceholder' id='viz1586879907650' style='position: absolute; left: 25%;'><noscript><a href='#'>
+										<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USAHousePriceIndex1991-2019&#47;DashboardUSAHousePriceIndexbyState&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+											<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='USAHousePriceIndex1991-2019&#47;DashboardUSAHousePriceIndexbyState' />
+											<param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USAHousePriceIndex1991-2019&#47;DashboardUSAHousePriceIndexbyState&#47;1.png' /> 
+											<param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586879907650');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two" class="spotlights">
+							<!--<section id="two" class="spotlights">
 								<div class="inner">
-									<header class="major">
-										<h2>Displaying Monthly Units Sold and Revenue: Interactive Tables</h2>
-									</header>
-									<!--<p>With </p>-->
-									<iframe src="cftdunits_table2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
-									<iframe src="cftdrevenue_table2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									
+									<iframe src="italyD3sankey.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									
 								</div>
 							</section>
 						<!-- Three -->
 						<!--<section id="three">
-							
-							<!--<div class="inner">
+							<div class="inner">
 								<header class="major">
-									<h2>Heat Map of When Reservations are Booked</h2>
+									<h2>Colored Interactive Network</h2>
 								</header>
-								<p>In this table we can see the median hours booked in advanced for each channel and each time of day (hour) of that reservation.</p>
-								<iframe src="heatmapbooktime.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+								<p>Click a recipe and drag it to see the ingredients it requires. 
+									Conversely, click and drag an ingredient to see how many recipes it is needed in.</p>
+								<iframe src="italyD3network.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
 								<ul class="actions">
 									<li><a href="index.html" class="button next">Other Projects</a></li>
 								</ul>
-							</div> -->
+							</div>
 						</section>
 
 						<!-- Four -->
-							<section id="four">
+							<!-- <section id="four">
 								<div class="inner">
-									<!--<header class="major">
+									<!-<header class="major">
 										<h2>Median Hours Booked Before Reservation: Interactive Table</h2>
 									</header>
 									<p>In this table we can see the median hours booked in advanced for each channel and each time of day (hour) of that reservation.</p>
 									<iframe src="fintotchantable.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>-->
-									<ul class="actions">
+									<!--<ul class="actions">
 										<li><a href="index.html" class="button next">Other Projects</a></li>
 									</ul>
 								</div>
-							</section>
+							</section> -->
 
 					</div>
 

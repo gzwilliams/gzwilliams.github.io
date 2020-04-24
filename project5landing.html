@@ -48,13 +48,13 @@
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Where is the Client's Revenue Coming From?</h1>
+								<h1>What Are Some of the Most Common Ingredients Used in Italian Recipes?</h1>
 							</header>
 							<div class="content">
-								<span style='font-weight: bold;'>Purpose:</span> <p>Display the avenues in which units are sold and where revenue<br />
-								is made - Monthly time series.</p>
+								<span style='font-weight: bold;'>Purpose:</span> <p>Display the relationship between different ingredients and recipes in <br />
+								order to see which ingredients you should always keep in stock.</p>
 								<ul class="actions">
-									<li><a href="https://github.com/gzwilliams/Business-Analysis-Units.Revenue.Channel.Fee/blob/master/ChannelFee-Breakdownport.r"
+									<li><a href="https://github.com/gzwilliams/Italian-Recipe-Network-Analysis/blob/master/italian%20recipe%20network.r"
 										target="_blank" class="fa fa-code"> Source</a></li>
 								</ul>
 								<!--<p>Methods: Wrote a SQL script to pull data. Transform and clean dataframes with R. Produce Images with R.</p>-->
@@ -69,11 +69,13 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Displaying Monthly Units Sold and Revenue: Interactive Lineplots</h2>
+										<h2>A Basic Interactive Network</h2>
 									</header>
-									<!--<p>We can see a distribution of how many hours ahead of the reservation that a booking is made, as well as through which channel.</p>-->
-									<iframe src="cftdunits_lineplot2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
-									<iframe src="cftdrevenue_lineplot2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									<p>The data used for this was taken from this <a href="https://www.recipetineats.com/wp-content/uploads/2014/06/Authentic-Italian-Pasta-PDF21.pdf" target="_blank">
+									list of authentic Italian pastas</a> and manually entered into an excel spreadsheet. Further data transformations were made within R in order create the edge and node lists. 
+									These data transformations can be viewed in the source code link above.</p>
+									<iframe src="italyVisNet.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									
 								</div>
 							</section>
 
@@ -81,41 +83,43 @@
 							<section id="two" class="spotlights">
 								<div class="inner">
 									<header class="major">
-										<h2>Displaying Monthly Units Sold and Revenue: Interactive Tables</h2>
+										<h2>Sankey Network Visualization</h2>
 									</header>
-									<!--<p>With </p>-->
-									<iframe src="cftdunits_table2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
-									<iframe src="cftdrevenue_table2.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									<p>From the Sankey network we can see that some of the most needed ingredients that we need in our kitchen are olive oil, garlic and tomatoes.
+										With the given data, chilis are needed pretty often as well surprisingly, but they typically aren't mandatory to use in Aglio e Olio.
+									</p>
+									<iframe src="italyD3sankey.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+									
 								</div>
 							</section>
 						<!-- Three -->
-						<!--<section id="three">
-							
-							<!--<div class="inner">
+						<<section id="three">
+							<div class="inner">
 								<header class="major">
-									<h2>Heat Map of When Reservations are Booked</h2>
+									<h2>Colored Interactive Network</h2>
 								</header>
-								<p>In this table we can see the median hours booked in advanced for each channel and each time of day (hour) of that reservation.</p>
-								<iframe src="heatmapbooktime.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
+								<p>Click a recipe and drag it to see the ingredients it requires. 
+									Conversely, click and drag an ingredient to see how many recipes it is needed in.</p>
+								<iframe src="italyD3network.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>
 								<ul class="actions">
 									<li><a href="index.html" class="button next">Other Projects</a></li>
 								</ul>
-							</div> -->
+							</div>
 						</section>
 
 						<!-- Four -->
-							<section id="four">
+							<!-- <section id="four">
 								<div class="inner">
-									<!--<header class="major">
+									<!-<header class="major">
 										<h2>Median Hours Booked Before Reservation: Interactive Table</h2>
 									</header>
 									<p>In this table we can see the median hours booked in advanced for each channel and each time of day (hour) of that reservation.</p>
 									<iframe src="fintotchantable.html" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0"></iframe>-->
-									<ul class="actions">
+									<!--<ul class="actions">
 										<li><a href="index.html" class="button next">Other Projects</a></li>
 									</ul>
 								</div>
-							</section>
+							</section> -->
 
 					</div>
 
